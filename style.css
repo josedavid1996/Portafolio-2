@@ -73,6 +73,10 @@ img {
   height: auto;
 }
 
+section {
+  padding: 50px 8%;
+}
+
 .is-active {
   display: none;
 }
@@ -100,7 +104,7 @@ img {
 
 .header__nav {
   position: fixed;
-  top: 6.8rem;
+  top: 4rem;
   height: 100vh;
   background-color: rgba(57, 79, 244, 0.9019607843);
   width: 100%;
@@ -160,6 +164,8 @@ a:hover {
 }
 .about {
   padding: 50px 8%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .about figure img {
   clip-path: circle(50% at 50% 50%);
@@ -173,6 +179,21 @@ a:hover {
   border: 0 solid transparent;
 }
 
+.about__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .about__section {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .about__section .about__img {
+    align-self: flex-start;
+  }
+}
 .hero {
   width: 100%;
   min-height: 100vh;
