@@ -1,11 +1,9 @@
 <?php get_header()  ?>
+<section class="hero">
 <?php
-
 $args = array(
   'pagename' => 'home'
 );
-
-
 $query = new WP_Query( $args );
 if ( $query->have_posts() ) {
     while ( $query->have_posts() ) {
@@ -13,12 +11,10 @@ if ( $query->have_posts() ) {
       ?>
         <?php the_content(); ?>
     <?php  }
-
 }
-
-
-
-
-
 ?>
+</section>
+<?php include 'about.php'; ?>
+
+
 <?php get_footer()  ?>

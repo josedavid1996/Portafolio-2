@@ -3,3 +3,21 @@
 @import "_utils";
 @import "_component";
 @import "_header";
+@import "_about";
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-hero;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
+  padding: 0 8%;
+  h1 {
+    max-width: 890px;
+    span {
+      font-weight: 700;
+    }
+  }
+}

@@ -18,6 +18,7 @@ body {
   font-size: 20px;
   margin: 0;
   overflow-x: hidden;
+  background-color: $bg-about;
 }
 h1 {
   font-size: 3rem;
@@ -25,6 +26,7 @@ h1 {
   margin: 0;
   font-weight: 500;
   font-family: "Mada", sans-serif;
+  color: $color-white;
 }
 h2 {
   color: $text-color-h2;
@@ -53,7 +55,7 @@ h4 {
   margin: 1rem 0 -0.5rem;
 }
 p {
-  font-size: 1rem;
+  font-size: 20px;
   line-height: 1.55;
   margin: 1rem 0;
 }
