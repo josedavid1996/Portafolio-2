@@ -7,7 +7,7 @@
 
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,9 +15,31 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
   padding: 0 8%;
   h1 {
-    max-width: 890px;
+    max-width: 70%;
+    &::before {
+      content: url(http://portafolio.local/wp-content/uploads/2022/04/leafy-branch-removebg-preview-e1649451461861.png);
+      position: absolute;
+      top: -149px;
+      left: -9rem;
+
+      transform: rotate(146deg);
+    }
+    &::after {
+      content: url(http://portafolio.local/wp-content/uploads/2022/04/main-flower-removebg-preview-e1649452754841.png);
+      position: absolute;
+      bottom: 90px;
+      right: 0;
+    }
     span {
       font-weight: 700;
     }
+  }
+}
+@media screen and (min-width: 400px) {
+  .hero {
+    min-height: 80vh;
+  }
+  h1::before {
+    bottom: 550px;
   }
 }

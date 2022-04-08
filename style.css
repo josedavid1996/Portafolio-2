@@ -1,3 +1,136 @@
+/* @link https://utopia.fyi/type/calculator?c=320,20,1.2,1280,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+:root {
+  --fluid-min-width: 320;
+  --fluid-max-width: 1280;
+  --fluid-screen: 100vw;
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  );
+}
+
+@media screen and (min-width: 1280px) {
+  :root {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+}
+:root {
+  --f--2-min: 13.89;
+  --f--2-max: 12.8;
+  --step--2: calc(
+    ((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) *
+      var(--fluid-bp)
+  );
+  --f--1-min: 16.67;
+  --f--1-max: 16;
+  --step--1: calc(
+    ((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
+      var(--fluid-bp)
+  );
+  --f-0-min: 20;
+  --f-0-max: 20;
+  --step-0: calc(
+    ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
+      var(--fluid-bp)
+  );
+  --f-1-min: 24;
+  --f-1-max: 25;
+  --step-1: calc(
+    ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+      var(--fluid-bp)
+  );
+  --f-2-min: 28.8;
+  --f-2-max: 31.25;
+  --step-2: calc(
+    ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
+      var(--fluid-bp)
+  );
+  --f-3-min: 34.56;
+  --f-3-max: 39.06;
+  --step-3: calc(
+    ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+      var(--fluid-bp)
+  );
+  --f-4-min: 41.47;
+  --f-4-max: 48.83;
+  --step-4: calc(
+    ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
+      var(--fluid-bp)
+  );
+  --f-5-min: 49.77;
+  --f-5-max: 61.04;
+  --step-5: calc(
+    ((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
+      var(--fluid-bp)
+  );
+}
+
+:root {
+  --fluid-min-width: 320;
+  --fluid-max-width: 1140;
+  --fluid-screen: 100vw;
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  );
+}
+
+@media screen and (min-width: 1140px) {
+  :root {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+}
+:root {
+  --f--2-min: 13.89;
+  --f--2-max: 15.36;
+  --step--2: calc(
+    ((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) *
+      var(--fluid-bp)
+  );
+  --f--1-min: 16.67;
+  --f--1-max: 19.2;
+  --step--1: calc(
+    ((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
+      var(--fluid-bp)
+  );
+  --f-0-min: 20;
+  --f-0-max: 24;
+  --step-0: calc(
+    ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
+      var(--fluid-bp)
+  );
+  --f-1-min: 24;
+  --f-1-max: 30;
+  --step-1: calc(
+    ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+      var(--fluid-bp)
+  );
+  --f-2-min: 28.8;
+  --f-2-max: 37.5;
+  --step-2: calc(
+    ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
+      var(--fluid-bp)
+  );
+  --f-3-min: 34.56;
+  --f-3-max: 46.88;
+  --step-3: calc(
+    ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+      var(--fluid-bp)
+  );
+  --f-4-min: 41.47;
+  --f-4-max: 58.59;
+  --step-4: calc(
+    ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
+      var(--fluid-bp)
+  );
+  --f-5-min: 49.77;
+  --f-5-max: 73.24;
+  --step-5: calc(
+    ((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
+      var(--fluid-bp)
+  );
+}
+
 html {
   box-sizing: border-box;
   margin: 0;
@@ -25,7 +158,7 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: calc(var(--step-5) - 15px);
   letter-spacing: 0.05rem;
   margin: 0;
   font-weight: 500;
@@ -35,7 +168,7 @@ h1 {
 
 h2 {
   color: #f0535d;
-  font-size: 1rem;
+  font-size: var(--step--1);
   letter-spacing: 0.06rem;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
@@ -44,7 +177,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.1rem;
+  font-size: var(--step-3);
   color: #1c2273;
   line-height: 1.3;
   text-transform: capitalize;
@@ -55,7 +188,7 @@ h3 {
 
 h4 {
   color: #7689d8;
-  font-size: 1.55rem;
+  font-size: var(--step-1);
   line-height: 1.3;
   font-weight: 600;
   letter-spacing: 0.02rem;
@@ -63,7 +196,7 @@ h4 {
 }
 
 p {
-  font-size: 20px;
+  font-size: calc(var(--step--1) + 2px);
   line-height: 1.55;
   margin: 1rem 0;
 }
@@ -196,7 +329,7 @@ a:hover {
 }
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,10 +338,33 @@ a:hover {
   padding: 0 8%;
 }
 .hero h1 {
-  max-width: 890px;
+  max-width: 70%;
+}
+.hero h1::before {
+  content: url(http://portafolio.local/wp-content/uploads/2022/04/leafy-branch-removebg-preview-e1649451461861.png);
+  position: absolute;
+  top: -149px;
+  left: -9rem;
+  transform: rotate(146deg);
+}
+.hero h1::after {
+  content: url(http://portafolio.local/wp-content/uploads/2022/04/main-flower-removebg-preview-e1649452754841.png);
+  position: absolute;
+  bottom: 90px;
+  right: 0;
 }
 .hero h1 span {
   font-weight: 700;
+}
+
+@media screen and (min-width: 400px) {
+  .hero {
+    min-height: 80vh;
+  }
+
+  h1::before {
+    bottom: 550px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
