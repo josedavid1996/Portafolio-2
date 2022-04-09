@@ -1,0 +1,48 @@
+.skills__container {
+  clip-path: polygon(0 0, 23% 2%, 100% 0, 100% 90%, 0 100%, 0% 50%);
+  background-color: $bg-skill;
+  .skills {
+    padding: 110px 8%;
+    h2 {
+      color: $color-white;
+    }
+    p {
+      a {
+        color: $text-color-link;
+        &:hover {
+          background-color: $text-color-link;
+          color: $color-white;
+          border: 0 solid transparent;
+        }
+      }
+    }
+  }
+
+  .skills__iconos {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: auto;
+    gap: 3px;
+    text-align: center;
+
+    figure {
+      min-width: 204px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 4.375rem;
+        height: 4.375rem;
+      }
+      figcaption {
+        color: #656565;
+      }
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .skills__container {
+      clip-path: polygon(0 0, 23% 8%, 100% 0, 100% 90%, 0 100%, 0% 50%);
+    }
+  }
+}

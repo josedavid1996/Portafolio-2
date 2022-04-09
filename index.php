@@ -1,5 +1,5 @@
 <?php get_header()  ?>
-<section class="hero">
+<div class="hero">
 <?php
 $args = array(
   'pagename' => 'home'
@@ -13,7 +13,7 @@ if ( $query->have_posts() ) {
     <?php  }
 }
 ?>
-</section>
+</div>
 <?php include 'about.php'; ?>
 <?php include 'skills.php'; ?>
 

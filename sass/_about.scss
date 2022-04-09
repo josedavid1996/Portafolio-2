@@ -1,0 +1,32 @@
+.about {
+  padding: 50px 8%;
+  max-width: $max-witch;
+  margin: 0 auto;
+  figure img {
+    clip-path: circle(50% at 50% 50%);
+  }
+  p > a {
+    color: $text-color-link;
+    &:hover {
+      background-color: $text-color-link;
+      color: $color-white;
+      border: 0 solid transparent;
+    }
+  }
+}
+
+.about__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .about__section {
+    flex-direction: row;
+    justify-content: center;
+    .about__img {
+      align-self: flex-start;
+    }
+  }
+}

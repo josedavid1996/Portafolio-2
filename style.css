@@ -208,6 +208,8 @@ img {
 
 section {
   padding: 50px 8%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .is-active {
@@ -327,6 +329,51 @@ a:hover {
     align-self: flex-start;
   }
 }
+.skills__container {
+  clip-path: polygon(0 0, 23% 2%, 100% 0, 100% 90%, 0 100%, 0% 50%);
+  background-color: #eeb4aa;
+}
+.skills__container .skills {
+  padding: 110px 8%;
+}
+.skills__container .skills h2 {
+  color: #fff;
+}
+.skills__container .skills p a {
+  color: #394ff4;
+}
+.skills__container .skills p a:hover {
+  background-color: #394ff4;
+  color: #fff;
+  border: 0 solid transparent;
+}
+.skills__container .skills__iconos {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: auto;
+  gap: 3px;
+  text-align: center;
+}
+.skills__container .skills__iconos figure {
+  min-width: 204px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills__container .skills__iconos figure img {
+  width: 4.375rem;
+  height: 4.375rem;
+}
+.skills__container .skills__iconos figure figcaption {
+  color: #656565;
+}
+@media screen and (min-width: 700px) {
+  .skills__container .skills__container {
+    clip-path: polygon(0 0, 23% 8%, 100% 0, 100% 90%, 0 100%, 0% 50%);
+  }
+}
+
 .hero {
   width: 100%;
   min-height: 60vh;
