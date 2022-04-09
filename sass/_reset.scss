@@ -220,3 +220,15 @@ section {
   max-width: $max-witch;
   margin: 0 auto;
 }
+p > a {
+  color: $text-color-link;
+  &:hover {
+    background-color: $text-color-link;
+    color: $color-white;
+    border: 0 solid transparent;
+  }
+}
+
+figure {
+  margin: 0;
+}

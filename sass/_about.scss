@@ -5,14 +5,14 @@
   figure img {
     clip-path: circle(50% at 50% 50%);
   }
-  p > a {
-    color: $text-color-link;
-    &:hover {
-      background-color: $text-color-link;
-      color: $color-white;
-      border: 0 solid transparent;
-    }
-  }
+  // p > a {
+  //   color: $text-color-link;
+  //   &:hover {
+  //     background-color: $text-color-link;
+  //     color: $color-white;
+  //     border: 0 solid transparent;
+  //   }
+  // }
 }
 
 .about__section {

@@ -26,4 +26,58 @@ function assets(){
 }
 add_action('wp_enqueue_scripts','assets');
 
+//POST TYPE WORK
+
+function work_type(){
+  $labels = array(
+    'name' => 'works',
+    'singular_name' => 'work',
+    'menu_name' => 'works' ,
+  );
+  $args = array('label' => 
+  'works',
+  'descripcion' => 'experience jobs',
+  'labels'  => $labels,
+  'supports' => array('title' , 'editor', 'thumbnail','revisions'),
+  'public' => true,
+  'show_in_menu' => true,
+  'menu_position' => 5,
+  'menu_icon' => 'dashicons-block-default',
+  'can_export' => true,
+  'publicly_queryable' => true,
+  'rewrite' => true,
+  'show_in_rest' => true
+);
+  register_post_type( 'work',$args );
+
+}
+  add_action('init','work_type');
+
+
+//POST TYPE TESTIMONIALS
+
+function testimonial_type(){
+  $labels = array(
+    'name' => 'testimonials',
+    'singular_name' => 'testimonial',
+    'menu_name' => 'testimonials' ,
+  );
+  $args = array('label' => 
+  'testimonial',
+  'descripcion' => 'testimonials',
+  'labels'  => $labels,
+  'supports' => array('title' , 'editor', 'thumbnail','revisions'),
+  'public' => true,
+  'show_in_menu' => true,
+  'menu_position' => 6,
+  'menu_icon' => 'dashicons-groups',
+  'can_export' => true,
+  'publicly_queryable' => true,
+  'rewrite' => true,
+  'show_in_rest' => true
+);
+  register_post_type( 'testimonial',$args );
+
+}
+  add_action('init','testimonial_type');
 ?>

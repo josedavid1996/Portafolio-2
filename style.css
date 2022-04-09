@@ -212,6 +212,19 @@ section {
   margin: 0 auto;
 }
 
+p > a {
+  color: #394ff4;
+}
+p > a:hover {
+  background-color: #394ff4;
+  color: #fff;
+  border: 0 solid transparent;
+}
+
+figure {
+  margin: 0;
+}
+
 .is-active {
   display: none;
 }
@@ -305,14 +318,6 @@ a:hover {
 .about figure img {
   clip-path: circle(50% at 50% 50%);
 }
-.about p > a {
-  color: #394ff4;
-}
-.about p > a:hover {
-  background-color: #394ff4;
-  color: #fff;
-  border: 0 solid transparent;
-}
 
 .about__section {
   display: flex;
@@ -330,7 +335,7 @@ a:hover {
   }
 }
 .skills__container {
-  clip-path: polygon(0 0, 23% 2%, 100% 0, 100% 90%, 0 100%, 0% 50%);
+  clip-path: polygon(0 0, 23% 2%, 100% 0, 100% 97%, 0 100%, 0% 50%);
   background-color: #eeb4aa;
 }
 .skills__container .skills {
@@ -338,14 +343,6 @@ a:hover {
 }
 .skills__container .skills h2 {
   color: #fff;
-}
-.skills__container .skills p a {
-  color: #394ff4;
-}
-.skills__container .skills p a:hover {
-  background-color: #394ff4;
-  color: #fff;
-  border: 0 solid transparent;
 }
 .skills__container .skills__iconos {
   max-width: 100%;
@@ -368,12 +365,54 @@ a:hover {
 .skills__container .skills__iconos figure figcaption {
   color: #656565;
 }
+
 @media screen and (min-width: 700px) {
-  .skills__container .skills__container {
+  .skills__container {
     clip-path: polygon(0 0, 23% 8%, 100% 0, 100% 90%, 0 100%, 0% 50%);
   }
 }
+.work__container {
+  background-color: #7689d8;
+  clip-path: polygon(0 2.4%, 100% 0, 100% 50%, 100% 100%, 0 100%, 0% 50%);
+  position: relative;
+  top: -115px;
+}
 
+.work {
+  padding: 140px 8%;
+  max-width: 1280px;
+}
+.work h2 {
+  color: #fff;
+}
+
+.work__items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 84px;
+}
+
+.work__items:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.items__text {
+  flex-basis: 70%;
+}
+.items__text h4 {
+  color: #eeb4aa;
+}
+
+@media screen and (min-width: 700px) {
+  .work__items {
+    flex-direction: column-reverse;
+  }
+
+  .work__items:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+}
 .hero {
   width: 100%;
   min-height: 60vh;

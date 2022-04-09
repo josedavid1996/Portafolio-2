@@ -16,6 +16,7 @@ if ( $query->have_posts() ) {
 </div>
 <?php include 'about.php'; ?>
 <?php include 'skills.php'; ?>
+<?php include 'work.php'; ?>
 
 
 <?php get_footer()  ?>

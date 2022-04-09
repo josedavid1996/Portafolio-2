@@ -1,0 +1,38 @@
+.work__container {
+  background-color: $bg-work;
+  clip-path: polygon(0 2.4%, 100% 0, 100% 50%, 100% 100%, 0 100%, 0% 50%);
+  position: relative;
+  top: -115px;
+}
+
+.work {
+  padding: 140px 8%;
+  max-width: $max-witch;
+  h2 {
+    color: $color-white;
+  }
+}
+.work__items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 84px;
+}
+.work__items:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.items__text {
+  flex-basis: 70%;
+  h4 {
+    color: $bg-skill;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .work__items {
+    flex-direction: column-reverse;
+  }
+  .work__items:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+}

@@ -1,21 +1,21 @@
 .skills__container {
-  clip-path: polygon(0 0, 23% 2%, 100% 0, 100% 90%, 0 100%, 0% 50%);
+  clip-path: polygon(0 0, 23% 2%, 100% 0, 100% 97%, 0 100%, 0% 50%);
   background-color: $bg-skill;
   .skills {
     padding: 110px 8%;
     h2 {
       color: $color-white;
     }
-    p {
-      a {
-        color: $text-color-link;
-        &:hover {
-          background-color: $text-color-link;
-          color: $color-white;
-          border: 0 solid transparent;
-        }
-      }
-    }
+    // p {
+    //   a {
+    //     color: $text-color-link;
+    //     &:hover {
+    //       background-color: $text-color-link;
+    //       color: $color-white;
+    //       border: 0 solid transparent;
+    //     }
+    //   }
+    // }
   }
 
   .skills__iconos {
@@ -40,9 +40,9 @@
       }
     }
   }
-  @media screen and (min-width: 700px) {
-    .skills__container {
-      clip-path: polygon(0 0, 23% 8%, 100% 0, 100% 90%, 0 100%, 0% 50%);
-    }
+}
+@media screen and (min-width: 700px) {
+  .skills__container {
+    clip-path: polygon(0 0, 23% 8%, 100% 0, 100% 90%, 0 100%, 0% 50%);
   }
 }
