@@ -5,26 +5,33 @@
   figure img {
     clip-path: circle(50% at 50% 50%);
   }
-  // p > a {
-  //   color: $text-color-link;
-  //   &:hover {
-  //     background-color: $text-color-link;
-  //     color: $color-white;
-  //     border: 0 solid transparent;
-  //   }
-  // }
 }
-
+.about__img {
+  width: 100%;
+}
+.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+  flex-basis: auto;
+  flex-grow: 1;
+}
 .about__section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.about__btn a {
+  border: 0px solid transparent;
+  border-bottom: 3px solid $text-color-link;
+  padding: 0;
+}
+.about__btn a:hover {
+  background-color: $text-color-link !important;
+  color: $color-white !important;
+}
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .about__section {
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
     .about__img {
       align-self: flex-start;
     }

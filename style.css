@@ -322,16 +322,36 @@ a:hover {
   clip-path: circle(50% at 50% 50%);
 }
 
+.about__img {
+  width: 100%;
+}
+
+.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+  flex-basis: auto;
+  flex-grow: 1;
+}
+
 .about__section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-@media screen and (min-width: 700px) {
+.about__btn a {
+  border: 0px solid transparent;
+  border-bottom: 3px solid #394ff4;
+  padding: 0;
+}
+
+.about__btn a:hover {
+  background-color: #394ff4 !important;
+  color: #fff !important;
+}
+
+@media screen and (min-width: 800px) {
   .about__section {
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
   }
   .about__section .about__img {
     align-self: flex-start;
