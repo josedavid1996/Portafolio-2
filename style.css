@@ -370,10 +370,12 @@ a:hover {
 .skills__container .skills__iconos {
   max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   grid-auto-rows: auto;
   gap: 3px;
   text-align: center;
+  justify-items: center;
+  align-items: stretch;
 }
 .skills__container .skills__iconos figure {
   min-width: 204px;

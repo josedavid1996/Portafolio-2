@@ -6,25 +6,17 @@
     h2 {
       color: $color-white;
     }
-    // p {
-    //   a {
-    //     color: $text-color-link;
-    //     &:hover {
-    //       background-color: $text-color-link;
-    //       color: $color-white;
-    //       border: 0 solid transparent;
-    //     }
-    //   }
-    // }
   }
 
   .skills__iconos {
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     grid-auto-rows: auto;
     gap: 3px;
     text-align: center;
+    justify-items: center;
+    align-items: stretch;
 
     figure {
       min-width: 204px;
