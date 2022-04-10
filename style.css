@@ -225,21 +225,10 @@ figure {
   margin: 0;
 }
 
-.is-active {
-  display: none;
-}
-
-.btn {
-  margin-bottom: 7px;
-  background-color: #a1eacd;
-  padding: 0.5rem 1.5rem 1rem;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
 .header {
   background-color: rgba(57, 79, 244, 0.9019607843);
   margin: 0;
+  margin-top: 20px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -252,10 +241,11 @@ figure {
 
 .header__nav {
   position: fixed;
-  top: 4rem;
+  top: 5.25rem;
   height: 100vh;
   background-color: rgba(57, 79, 244, 0.9019607843);
   width: 100%;
+  transition: top 500ms linear;
 }
 
 .header__list {
@@ -310,6 +300,19 @@ a:hover {
     padding-right: 3rem;
   }
 }
+.is-active {
+  top: -58rem;
+  transition: top 500ms linear;
+}
+
+.btn {
+  margin-bottom: 7px;
+  background-color: #a1eacd;
+  padding: 0.5rem 1.5rem 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
 .about {
   padding: 50px 8%;
   max-width: 1280px;
