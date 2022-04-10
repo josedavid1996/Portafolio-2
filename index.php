@@ -18,6 +18,7 @@ if ( $query->have_posts() ) {
 <?php include 'skills.php'; ?>
 <?php include 'work.php'; ?>
 <?php include 'testimonial.php'; ?>
+<?php include 'contact.php'; ?>
 
 
 <?php get_footer()  ?>
