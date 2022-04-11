@@ -14,12 +14,20 @@
   display: flex;
   width: 100%;
   flex-direction: column-reverse;
+  margin: 5rem 0;
+}
+.testimonial__text {
+  position: relative;
+  // &::before {
+  //   content: url(http://portafolio.local/wp-content/uploads/2022/04/quote-left-solid-1.svg);
+  //   position: absolute;
+  //   top: 0;
+  //   width: 50px;
+  // }
 }
 
-.testimonial__text {
-  flex-basis: 50% !important;
-}
 .testimonial__image {
+  text-align: center;
   figure {
     img {
       margin: 0 auto;

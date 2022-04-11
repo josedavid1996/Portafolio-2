@@ -479,12 +479,16 @@ a:hover {
   display: flex;
   width: 100%;
   flex-direction: column-reverse;
+  margin: 5rem 0;
 }
 
 .testimonial__text {
-  flex-basis: 50% !important;
+  position: relative;
 }
 
+.testimonial__image {
+  text-align: center;
+}
 .testimonial__image figure img {
   margin: 0 auto;
   clip-path: circle(50% at 50% 50%);
