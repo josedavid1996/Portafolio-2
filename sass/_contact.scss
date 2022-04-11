@@ -27,6 +27,21 @@
     resize: none;
   }
 }
+input[type="submit"] {
+  border: 0 solid transparent;
+  cursor: pointer;
+  width: auto;
+  padding: 0.5rem 1.5rem 1rem;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+  color: #252525;
+  font-family: "Crimson Pro", serif;
+  transition: background-color 0.5s ease;
+  &:hover {
+    background-color: #f48480;
+  }
+}
 
 @media screen and (min-width: 800px) {
   .contact__section {
