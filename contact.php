@@ -18,8 +18,8 @@
   ?>
   <div class="contact__section">
     <form action="" class="contact__form">
-      <input type="text" name="name" placeholder="Name">
-      <input type="email" name="email" placeholder="Email">
+      <input autocomplete="off" type="text" name="name" placeholder="Name">
+      <input autocomplete="off" type="email" name="email" placeholder="Email">
       <textarea name="message" placeholder="Message" ></textarea>
       <input class="btn" type="submit" value="Send Email">
     </form>

@@ -527,6 +527,8 @@ a:hover {
   padding: 1.2rem 0.6rem 0.4rem;
   margin-bottom: 2rem;
   box-shadow: 2px 2px #f0535d;
+  outline: none;
+  resize: none;
 }
 
 @media screen and (min-width: 800px) {
@@ -538,6 +540,19 @@ a:hover {
     width: 70%;
   }
 }
+footer {
+  background-color: #e1b4e5;
+  width: 100%;
+  position: relative;
+  bottom: -1rem;
+  margin-top: -13rem;
+}
+
+p {
+  text-align: center;
+  padding: 1rem 0;
+}
+
 .hero {
   width: 100%;
   min-height: 60vh;
