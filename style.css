@@ -494,7 +494,7 @@ a:hover {
   clip-path: circle(50% at 50% 50%);
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .testimonial__item {
     flex-direction: row;
   }
