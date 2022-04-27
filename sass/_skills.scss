@@ -6,6 +6,9 @@
     h2 {
       color: $color-white;
     }
+    p {
+      color: $color-white;
+    }
   }
 
   .skills__iconos {
@@ -28,7 +31,7 @@
         height: 4.375rem;
       }
       figcaption {
-        color: #656565;
+        color: $color-white;
       }
     }
   }

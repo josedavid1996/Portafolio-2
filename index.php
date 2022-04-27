@@ -17,7 +17,7 @@ if ( $query->have_posts() ) {
 <?php include 'about.php'; ?>
 <?php include 'skills.php'; ?>
 <?php include 'work.php'; ?>
-<?php include 'testimonial.php'; ?>
+
 <?php include 'contact.php'; ?>
 
 

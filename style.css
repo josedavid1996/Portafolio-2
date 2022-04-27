@@ -155,7 +155,7 @@ body {
   font-size: 20px;
   margin: 0;
   overflow-x: hidden;
-  background-color: #f6e6e0;
+  background-color: #fff;
 }
 
 h1 {
@@ -168,7 +168,7 @@ h1 {
 }
 
 h2 {
-  color: #f0535d;
+  color: #7a73ff;
   font-size: var(--step--1);
   letter-spacing: 0.06rem;
   text-transform: uppercase;
@@ -179,7 +179,7 @@ h2 {
 
 h3 {
   font-size: var(--step-3);
-  color: #1c2273;
+  color: #02aed6;
   line-height: 1.3;
   text-transform: capitalize;
   margin: 0 0 1rem;
@@ -188,7 +188,7 @@ h3 {
 }
 
 h4 {
-  color: #7689d8;
+  color: #02aed6;
   font-size: var(--step-1);
   line-height: 1.3;
   font-weight: 600;
@@ -214,10 +214,10 @@ section {
 }
 
 p > a {
-  color: #394ff4;
+  color: #7a73ff;
 }
 p > a:hover {
-  background-color: #394ff4;
+  background-color: #7a73ff;
   color: #fff;
   border: 0 solid transparent;
 }
@@ -227,7 +227,7 @@ figure {
 }
 
 .header {
-  background-color: rgba(57, 79, 244, 0.9019607843);
+  background-color: #7a73ff;
   margin: 0;
   position: fixed;
   top: 0;
@@ -267,7 +267,7 @@ a {
 }
 
 a:hover {
-  border-bottom: 3px solid #f0535d;
+  border-bottom: 3px solid #7a73ff;
 }
 
 .header__icon {
@@ -307,7 +307,7 @@ a:hover {
 
 .btn {
   margin-bottom: 7px;
-  background-color: #a1eacd;
+  background-color: #02aed6;
   padding: 0.5rem 1.5rem 1rem;
   text-decoration: none;
   text-transform: capitalize;
@@ -339,12 +339,12 @@ a:hover {
 
 .about__btn a {
   border: 0px solid transparent;
-  border-bottom: 3px solid #394ff4;
+  border-bottom: 3px solid #7a73ff;
   padding: 0;
 }
 
 .about__btn a:hover {
-  background-color: #394ff4 !important;
+  background-color: #7a73ff !important;
   color: #fff !important;
 }
 
@@ -359,12 +359,15 @@ a:hover {
 }
 .skills__container {
   clip-path: polygon(0 0, 23% 2%, 100% 0, 100% 97%, 0 100%, 0% 50%);
-  background-color: #eeb4aa;
+  background-color: #0a2540;
 }
 .skills__container .skills {
   padding: 110px 8%;
 }
 .skills__container .skills h2 {
+  color: #fff;
+}
+.skills__container .skills p {
   color: #fff;
 }
 .skills__container .skills__iconos {
@@ -388,7 +391,7 @@ a:hover {
   height: 4.375rem;
 }
 .skills__container .skills__iconos figure figcaption {
-  color: #656565;
+  color: #fff;
 }
 
 @media screen and (min-width: 700px) {
@@ -397,7 +400,7 @@ a:hover {
   }
 }
 .work__container {
-  background-color: #7689d8;
+  background-color: #fff;
   clip-path: polygon(0 2.4%, 100% 0, 100% 50%, 100% 100%, 0 100%, 0% 50%);
   position: relative;
   top: -115px;
@@ -427,7 +430,7 @@ a:hover {
   flex-basis: 70%;
 }
 .items__text h4 {
-  color: #eeb4aa;
+  color: #0a2540;
 }
 
 .work__icons div {
@@ -462,7 +465,7 @@ a:hover {
   }
 }
 .testimonial__container {
-  background-color: #a1eacd;
+  background-color: #02aed6;
   clip-path: polygon(0 1%, 27% 0, 70% 1%, 100% 0, 100% 100%, 0 100%);
   position: relative;
   top: -180px;
@@ -500,9 +503,12 @@ a:hover {
   }
 }
 .contact__container {
-  background-color: #fef2d8;
+  background-color: #0a2540;
   position: relative;
   top: -181px;
+}
+.contact__container p {
+  color: #fff;
 }
 
 .contact__section {
@@ -526,7 +532,7 @@ a:hover {
   display: block;
   padding: 1.2rem 0.6rem 0.4rem;
   margin-bottom: 2rem;
-  box-shadow: 2px 2px #f0535d;
+  box-shadow: 2px 2px #02aed6;
   outline: none;
   resize: none;
 }
@@ -557,11 +563,11 @@ input[type=submit]:hover {
   }
 }
 footer {
-  background-color: #e1b4e5;
+  background-color: #7a73ff;
   width: 100%;
   position: relative;
   bottom: -1rem;
-  margin-top: -13rem;
+  margin-top: -14rem;
 }
 
 p {
@@ -575,7 +581,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #48d8a4;
+  background-color: #0a2540;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
   padding: 0 8%;
 }
